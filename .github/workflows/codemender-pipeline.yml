@@ -41,6 +41,8 @@ on:
       - '**.md'
       - 'lab/**'
       - '.gitignore'
+  pull_request:
+    branches: [ "main" ]
   workflow_dispatch:
   # Note: no `pull_request:` trigger — it produced branch-less red runs on the
   # bot-authored remediation PR and GitHub "action_required" approval prompts.
